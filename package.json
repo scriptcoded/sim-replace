@@ -1,0 +1,20 @@
+{
+  "name": "sim-replace",
+  "version": "1.0.0",
+  "description": "A small utility to execute multiple replaces simultaneously",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scriptcoded/sim-replace.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "replace",
+    "simultaneous",
+    "regex"
+  ],
+  "author": "Malcolm Nihlén <malcolm.nihlen@gmail.com>",
+  "license": "MIT"
+}
