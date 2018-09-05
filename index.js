@@ -7,6 +7,11 @@ module.exports = (text, replacers) => {
     let replace = replacer[1]
 
     let match = matcher.exec(text)
+
+    if (!match) {
+      return
+    }
+
     let matches = Object.keys(match)
       .map(key => parseInt(key))
       .filter(key => Number.isInteger(key))
@@ -23,6 +28,10 @@ module.exports = (text, replacers) => {
       index: match.index
     })
   })
+
+  if (parts.length <= 0) {
+    return text
+  }
 
   parts.forEach((part, i) => {
     let lastPart = (parts[i - 1] || { match: '', index: 0 })
