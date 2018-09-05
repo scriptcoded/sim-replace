@@ -49,6 +49,9 @@ let result = simReplace(text, [
 result === 'This is Fanny, my sister' // true
 ```
 
+## Known issues
+- Regex with multiple matches doesn't work.
+
 ## Contributing
 
 1. Fork it (<https://github.com/scriptcoded/sim-replace/fork>)
